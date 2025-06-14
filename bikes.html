@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Designium Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-slate-100 to-gray-200 text-gray-800 min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+        The Designium Hub
+      </h1>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+      <ul class="hidden md:flex space-x-6 font-semibold">
+        <li><a href="index.html" class="hover:text-pink-500 transition">Nature</a></li>
+        <li><a href="Bikes.html" class="hover:text-pink-500 transition">Bikes</a></li>
+        <li><a href="Cars.html" class="hover:text-pink-500 transition">Cars</a></li>
+        <li><a href="Games.html" class="hover:text-pink-500 transition">Games</a></li>
+        <li><a href="Photography.html" class="hover:text-pink-500 transition">Photography</a></li>
+        <li><a href="Movies.html" class="hover:text-pink-500 transition">Movies</a></li>
+      </ul>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <ul class="space-y-2 font-semibold">
+        <li><a href="index.html" class="block">Nature</a></li>
+        <li><a href="Bikes.html" class="block">Bikes</a></li>
+        <li><a href="Cars.html" class="block">Cars</a></li>
+        <li><a href="Games.html" class="block">Games</a></li>
+        <li><a href="Photography.html" class="block">Photography</a></li>
+        <li><a href="Movies.html" class="block">Movies</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Cards -->
+  <main class="container mx-auto px-4 py-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Card Template -->
+    <!-- Repeat this block with different image paths -->
+    <div class="relative group rounded-xl overflow-hidden shadow-xl">
+      <img src="./image/bikes/p1.jpg" alt="Bike 1" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center space-y-3 text-white">
+        <button onclick="viewImage('./image/bikes/p1.jpg')" class="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">👁 View</button>
+        <a href="./image/bikes/p1.jpg" download class="bg-gradient-to-r from-green-400 to-lime-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">⬇ Download</a>
+      </div>
+    </div>
+
+    <!-- Duplicate cards with new image links -->
+    <div class="relative group rounded-xl overflow-hidden shadow-xl">
+      <img src="./image/bikes/p2.jpg" alt="Bike 2" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center space-y-3 text-white">
+        <button onclick="viewImage('./image/bikes/p2.jpg')" class="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">👁 View</button>
+        <a href="./image/bikes/p2.jpg" download class="bg-gradient-to-r from-green-400 to-lime-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden shadow-xl">
+      <img src="./image/bikes/p3.jpg" alt="Bike 3" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center space-y-3 text-white">
+        <button onclick="viewImage('./image/bikes/p3.jpg')" class="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">👁 View</button>
+        <a href="./image/bikes/p3.jpg" download class="bg-gradient-to-r from-green-400 to-lime-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden shadow-xl">
+      <img src="./image/bikes/p4.jpg" alt="Bike 4" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center space-y-3 text-white">
+        <button onclick="viewImage('./image/bikes/p4.jpg')" class="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">👁 View</button>
+        <a href="./image/bikes/p4.jpg" download class="bg-gradient-to-r from-green-400 to-lime-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden shadow-xl">
+      <img src="./image/bikes/p5.jpg" alt="Bike 5" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center space-y-3 text-white">
+        <button onclick="viewImage('./image/bikes/p5.jpg')" class="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">👁 View</button>
+        <a href="./image/bikes/p5.jpg" download class="bg-gradient-to-r from-green-400 to-lime-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">⬇ Download</a>
+      </div>
+    </div>
+
+    <div class="relative group rounded-xl overflow-hidden shadow-xl">
+      <img src="./image/bikes/p6.jpg" alt="Bike 6" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center space-y-3 text-white">
+        <button onclick="viewImage('./image/bikes/p6.jpg')" class="bg-gradient-to-r from-pink-500 to-purple-600 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">👁 View</button>
+        <a href="./image/bikes/p6.jpg" download class="bg-gradient-to-r from-green-400 to-lime-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">⬇ Download</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Fullscreen Modal -->
+  <div id="imageModal" class="fixed inset-0 hidden items-center justify-center z-50 bg-black bg-opacity-90">
+    <button onclick="closeModal()" class="absolute top-4 right-4 bg-white text-black rounded-full p-2 shadow text-xl z-50">✖</button>
+    <img id="modalImage" src="" alt="Full View" class="max-w-full max-h-full w-screen h-screen object-contain">
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 mt-10 shadow-inner">
+    &copy; 2025 The Designium Hub. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    function viewImage(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('imageModal').classList.remove('hidden');
+      document.getElementById('imageModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').classList.remove('flex');
+      document.getElementById('imageModal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
